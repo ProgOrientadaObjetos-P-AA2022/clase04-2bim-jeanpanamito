@@ -9,6 +9,31 @@ package paquete02;
  *
  * @author reroes
  */
-public class Automovil {
+public abstract class Automovil {
+    protected String nombrePropietario;
+    protected String placa;
+    protected double valorCancelar;   
+
+    public String obtenerNombrePropietario() {
+        return nombrePropietario;
+    }
+
+    public void establecerNombrePropietario(String nombre) {
+        nombrePropietario = nombre;
+    }
+
+    public String obtenerPlaca() {
+        return placa;
+    }
+
+    public void setPlaca(String pla) {
+        placa = pla;
+    }
+
+    public abstract void calcularCancelar() ;
+        
+    
+
+    
     
 }

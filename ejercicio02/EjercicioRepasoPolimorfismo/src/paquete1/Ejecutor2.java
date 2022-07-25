@@ -30,9 +30,25 @@ public class Ejecutor2 {
         ¿Cómo saber a que tipo de Pasaje pertenece cada objeto? Usar la edad 
         como discriminatoria.
         
+        menor de edad: mayor o igual a 0 y menor o igual a 18
+        universitario: mayor a 18 y menor o igual a 25
+        normal: mayor a 25 y menor 65
+        tercera edad: mayor o igual a 65
+        
         */
         // inicio de solución
-        
+        for (int i = 0; i < edad.length; i++) {
+            if (edad[i]>=0 && edad[i]<=18) {
+               PasajeMenorEdad pasajeMenorEdad = new PasajeMenorEdad(pasajeFijo);
+                Persona persona = new Persona(nombres[i], apellidos[i],edad[i]);
+                pasajeMenorEdad.establecerPersona(persona);
+                pasajes.add(pasajeMenorEdad);
+            }
+            
+            
+            
+            
+        }
         
         // fin  de solución
         
